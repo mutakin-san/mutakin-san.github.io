@@ -1,0 +1,97 @@
+@use 'variables' as var;
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.2rem 0;
+    position: sticky;
+    background-color: var.$dark;
+    top: 0;
+    z-index: 10;
+
+    .logo {
+        h1 {
+            font-family: 'Inter', serif;
+            font-size: 2rem;
+            font-weight: 700;
+            color: var.$white;
+        }
+    }
+
+    .nav-links {
+        ul {
+            display: flex;
+            list-style: none;
+            li {
+                a {
+                    text-decoration: none;
+                    color: var.$white;
+                    font-family: 'Inter', serif;
+                    font-weight: 700;
+                    font-size: 1rem;
+                    margin: 0 1rem;
+
+                    &:hover, &:focus, &:active{
+                        color: var.$light-blue;
+                        transition: all 0.3s ease-in-out;
+                    }
+                }
+            }
+        }
+    }
+
+    .action-btn {
+        button {
+            background-color: transparent;
+            color: var.$light-blue;;
+            border: 1px solid var.$light-blue;
+            padding: 0.5rem 1rem;
+            border-radius: 0.5rem;
+            font-family: 'Inter', serif;
+            font-weight: 400;
+            font-size: 1rem;
+        }
+    }
+
+    .menu-icon {
+        display: none;
+        cursor: pointer;
+        div {
+            width: 25px;
+            height: 3px;
+            background-color: var.$light-blue;
+            margin: 5px 0;
+            border-radius: 5px;
+        }
+    }
+}
+
+
+@media screen and (max-width: 1024px) {
+    .navbar {
+        .logo {
+            h1 {
+                font-size: 1.5rem;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        .logo {
+            h1 {
+                font-size: 1.2rem;
+            }
+        }
+    }
+        
+    .nav-links, .action-btn {
+        display: none;
+    }
+
+    .menu-icon {
+        display: block!important;
+    }
+}

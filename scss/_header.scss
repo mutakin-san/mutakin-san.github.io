@@ -1,0 +1,172 @@
+@use 'variables' as var;
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.2rem 0;
+    gap: 2rem;
+    min-height: 85vh;
+
+    .header-left {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        min-width: 30%;
+
+        p {
+            font-family: 'Kalam', serif;
+            font-size: 2rem;
+            font-weight: 700;
+            color: var.$white;
+
+            &::before {
+                content: '';
+                display: block;
+                width: 3rem;
+                height: .4rem;
+                margin-bottom: .5rem;
+                background-color: var.$light-blue;
+                border-radius: 8px;
+            }
+        }
+
+        h1 {
+            font-family: 'Kalam', serif;
+            font-size: 6.5rem;
+            font-weight: 800;
+            color: var.$white;
+            overflow: hidden;
+            border-right: .05em solid var.$light-blue;
+            animation: 
+                typing .5s steps(40, end),
+                blink-caret .75s step-end infinite;
+        }
+
+        .social-links {
+            ul {
+                display: flex;
+                gap: 1rem;
+                list-style: none;
+                li {    
+                    a {
+                        img {
+                            width: 2rem;
+                            object-fit: fill;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .header-middle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        img {
+            width: 30rem;
+            object-fit: fill;
+        }
+    }
+
+    .header-right {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        max-width: 30%;
+
+        img {
+            width: 3rem;
+        }
+
+        p {
+            font-family: 'Inter', serif;
+            color: var.$white;
+            line-height: 1.5rem;
+
+            &:first-of-type::before {
+                content: '';
+                display: inline-block;
+                width: 1rem;
+                height: 1rem;
+                margin-right: .2rem;
+                background-color: var.$light-green;
+                border-radius: 50%;
+    
+            }
+        }
+
+        h1 {
+            font-family: 'Inter', serif;
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: var.$white;
+        }
+    }
+}
+
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: var.$light-blue }
+}
+
+@media screen and (max-width: 1200px) {
+    .header {
+        .header-left {
+            h1 {
+                font-size: 4rem;
+            }   
+        }
+        .header-middle {
+            img {
+                width: 20rem;
+            }
+        }
+        .header-right {
+            p {
+                font-size: .8rem;
+            }
+
+            h1 {
+                font-size: 1.2rem;
+            }
+        }
+    }
+    
+}
+
+@media screen and (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        gap: 2rem;
+        .header-left {
+            min-width: 100%;
+            align-items: center;
+
+            h1 {
+                font-size: 5rem;
+            }
+        }
+        .header-middle {
+            img {
+                width: 20rem;
+            }
+        }
+        .header-right {
+            align-items: center;
+            max-width: 100%;            
+            p, h1{
+                text-align: center;
+            }
+        }
+    }
+    
+}

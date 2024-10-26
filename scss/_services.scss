@@ -1,0 +1,49 @@
+@use 'variables' as var;
+
+.services {
+    display: flex;
+    gap: 2rem;
+    margin-top: 4rem;
+
+    .service {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1rem;
+        border-radius: 0.5rem;
+        transition: all 0.3s ease-in-out;
+        background-color: var.$secondary-black;
+        &:hover {
+            transform: scale(1.05);
+            border: 1px solid var.$light-blue;
+        }
+
+        .service-icon img {
+            width: 5rem;
+        }
+
+        .service-title {
+            font-family: 'Inter', serif;
+            font-weight: 700;
+            font-size: 1.5rem;
+            color: var.$white;
+        }
+
+        .service-description {
+            font-family: 'Inter', serif;
+            font-weight: 400;
+            font-size: 1rem;
+            color: var.$grey;
+        }
+
+
+    }
+
+}
+
+
+@media screen and (max-width: 480px) {
+    .services {
+        flex-direction: column;
+    }
+}

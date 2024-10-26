@@ -1,0 +1,67 @@
+@use 'variables' as var;
+
+.contact-wrapper {
+    display: flex;
+    gap: 10rem;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: var.$secondary-black;
+    border-radius: 1.5rem;
+
+    .contact-info {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+
+        .section-title {
+            text-align: start;
+        }
+
+        &-item {
+            display: flex;
+            gap: 1rem;
+
+            .contact-info-icon {
+                width: 100%;
+                max-width: 3rem;
+            }
+
+            &__wrapper {
+                display: flex;
+                flex-direction: column;
+                gap: .5rem;
+                .contact-info-title, .contact-info-subtitle {
+                    font-family: 'Inter', serif;
+                }
+    
+                .contact-info-title {
+                    color: var.$white;
+                }
+    
+                .contact-info-subtitle {
+                    color: var.$dark-grey;
+                }
+            }
+        }
+
+
+    }
+
+    .contact-form {
+        flex-grow: 1;
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .contact-wrapper {
+        flex-direction: column;
+        gap: 2rem;
+    }
+    
+}

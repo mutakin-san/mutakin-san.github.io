@@ -1,0 +1,19 @@
+@use 'variables' as var;
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 0;
+    background-color: var.$dark;
+    color: var.$white;
+    font-family: 'Inter', serif;
+
+    .logo {
+        font-size: 1.5rem;
+
+        @media screen and (max-width: 768px) {
+            font-size: 1.2rem;
+        }
+    }
+}
