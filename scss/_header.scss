@@ -6,7 +6,6 @@
     align-items: center;
     padding: 1.2rem 0;
     gap: 2rem;
-    min-height: 85vh;
 
     .header-left {
         display: flex;
@@ -36,7 +35,6 @@
             font-size: 6.5rem;
             font-weight: 800;
             color: var.$white;
-            overflow: hidden;
             border-right: .05em solid var.$light-blue;
             animation: 
                 typing .5s steps(40, end),
@@ -122,6 +120,7 @@
     .header {
         .header-left {
             h1 {
+                width: fit-content;
                 font-size: 4rem;
             }   
         }

@@ -1,4 +1,8 @@
 @use 'variables' as var;
+* {
+    scroll-behavior: smooth;
+}
+
 .wrapper {
     margin: 0 2.5rem;
 }

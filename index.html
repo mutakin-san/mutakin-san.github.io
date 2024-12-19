@@ -17,11 +17,32 @@
 <body>
 
     <div class="wrapper">
-        <div class="navbar">
-            <div class="logo">
-                <h1>Mutakin.</h1>
+        <nav>
+            <div class="navbar">
+                <div class="logo">
+                    <h1>Mutakin.</h1>
+                </div>
+                <div class="nav-links">
+                    <ul>
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#experiences">Experiences</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="action-btn">
+                    <button><a href="/assets/cv.pdf" download="Mutakin.pdf">Download CV</a></button>
+                </div>
+    
+                <div id="menu" class="menu-icon">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
             </div>
-            <div class="nav-links">
+            <div id="nav-links-mobile" class="mobile-nav-links">
                 <ul>
                     <li><a href="#header">Home</a></li>
                     <li><a href="#services">Services</a></li>
@@ -31,16 +52,7 @@
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </div>
-            <div class="action-btn">
-                <button><a href="/assets/cv.pdf" download="Mutakin.pdf">Download CV</a></button>
-            </div>
-
-            <div class="menu-icon">
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
-        </div>
+        </nav>
 
         <div id="header" class="header">
             <div class="header-left">
@@ -60,7 +72,7 @@
             </div>
             <div class="header-right">
                 <img src="images/decoration.svg" alt="Decoration">
-                <p>Available or Work</p>
+                <p>Available for Work</p>
                 <h1>Mobile & Frontend Developer</h1>
                 <p>I am highly dedicated to becoming a Professional Software Engineer. Mastering High Level Skills in the field of Android & Web Development. Continuous Learning is a must to adapt to technological developments.</p>
             </div>
@@ -88,7 +100,6 @@
                 </div>
             </div>
         </div>
-
 
         <div id="skills">
             <h2 class="section-title">
@@ -346,6 +357,7 @@
         </footer>
     </div>
     
+    <script src="index.js"></script>
     
     <script>
         AOS.init();
