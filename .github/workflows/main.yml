@@ -20,9 +20,10 @@ jobs:
     - name: 📂 Sync files
       uses: SamKirkland/FTP-Deploy-Action@v4.3.5
       with:
-        server: ftp.153.92.11.18
+        server: ftp.mutakin.com
         username: ${{ secrets.USERNAME }}
         password: ${{ secrets.PASSWORD }}
+        server-dir: domains/mutakin.com/public_html/
         exclude: |
           **/.git*
           **/.git*/**
