@@ -12,6 +12,9 @@ jobs:
       uses: actions/setup-node@v2
       with:
         node-version: '16'
+    - name: 🔨 Build Project
+      run: |
+        sass scss/styles.scss css/main.css
     
     - name: 📂 Sync files
       uses: SamKirkland/FTP-Deploy-Action@v4.3.5
@@ -19,3 +22,5 @@ jobs:
         server: ftp.mutakin.com
         username: ${{ secrets.USERNAME }}
         password: ${{ secrets.PASSWORD }}
+        exclude: |
+          **/scss/**
