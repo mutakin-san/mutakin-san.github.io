@@ -7,7 +7,6 @@ on:
 jobs:
   web-deploy:
     name: Deploy
-    runs-on: ubuntu-latest
     steps:
       - name: Upload to cPanel 📂
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
@@ -15,8 +14,3 @@ jobs:
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.USERNAME }}
           password: ${{ secrets.PASSWORD }}
-          exclude: |
-            **/.git**
-            **/.git*/**
-            **/node_modules/**
-            **/.**
