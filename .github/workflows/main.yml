@@ -14,6 +14,7 @@ jobs:
         node-version: '16'
     - name: 🔨 Build Project
       run: |
+        npm install -g sass
         sass scss/styles.scss css/main.css
     
     - name: 📂 Sync files
