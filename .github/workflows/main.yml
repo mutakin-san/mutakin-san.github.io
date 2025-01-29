@@ -24,4 +24,7 @@ jobs:
         username: ${{ secrets.USERNAME }}
         password: ${{ secrets.PASSWORD }}
         exclude: |
+          **/.git*
+          **/.git*/**
+          **/node_modules/**
           **/scss/**
