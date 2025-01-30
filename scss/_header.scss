@@ -5,6 +5,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 1.2rem 0;
+    margin-bottom: 5rem;
     gap: 2rem;
 
     .header-left {
@@ -83,6 +84,11 @@
             font-family: 'Inter', serif;
             color: var.$white;
             line-height: 1.5rem;
+
+            b {
+                color: var.$light-blue;
+                font-weight: 700;
+            }
 
             &:first-of-type::before {
                 content: '';

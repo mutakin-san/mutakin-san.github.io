@@ -1,13 +1,18 @@
 @use 'variables' as var;
+nav {
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+}
+
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1.2rem 0;
-    position: sticky;
     background-color: var.$dark;
-    top: 0;
-    z-index: 10;
 
     .logo {
         h1 {

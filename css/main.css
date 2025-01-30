@@ -144,15 +144,20 @@ button a {
     margin: 0 1rem;
   }
 }
+nav {
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+}
+
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1.2rem 0;
-  position: sticky;
   background-color: #111111;
-  top: 0;
-  z-index: 10;
 }
 .navbar .logo h1 {
   font-family: "Inter", serif;
@@ -267,6 +272,7 @@ button a {
   justify-content: space-between;
   align-items: center;
   padding: 1.2rem 0;
+  margin-bottom: 5rem;
   gap: 2rem;
 }
 .header .header-left {
@@ -329,6 +335,10 @@ button a {
   font-family: "Inter", serif;
   color: #FFFFFF;
   line-height: 1.5rem;
+}
+.header .header-right p b {
+  color: #3DC5FF;
+  font-weight: 700;
 }
 .header .header-right p:first-of-type::before {
   content: "";
@@ -480,13 +490,15 @@ button a {
 .bento-layout {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   gap: 1rem;
   margin-top: 4rem;
 }
 
 .portfolio {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
   gap: 1rem;
 }
 .portfolio .project {
@@ -524,7 +536,7 @@ button a {
 }
 
 .portfolio:first-child {
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
 }
 
 #experiences {
