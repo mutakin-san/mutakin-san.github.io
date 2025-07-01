@@ -340,15 +340,6 @@ nav {
   color: #3DC5FF;
   font-weight: 700;
 }
-.header .header-right p:first-of-type::before {
-  content: "";
-  display: inline-block;
-  width: 1rem;
-  height: 1rem;
-  margin-right: 0.2rem;
-  background-color: #00E116;
-  border-radius: 50%;
-}
 .header .header-right h1 {
   font-family: "Inter", serif;
   font-size: 1.5rem;
