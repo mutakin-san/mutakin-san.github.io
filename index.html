@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,12 +9,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kalam:wght@300;400;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kalam:wght@300;400;700&display=swap"
+        rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link rel="stylesheet" href="css/main.css">
     <title>Hi, I am Mutakin | Mobile Dev & Frontend Dev</title>
 </head>
+
 <body>
     <nav>
         <div class="wrapper">
@@ -24,17 +28,17 @@
                 <div class="nav-links">
                     <ul>
                         <li><a href="#header">Profile</a></li>
-                        <li><a href="#services">Services</a></li>
                         <li><a href="#skills">Skills</a></li>
                         <li><a href="#portfolio">Portfolio</a></li>
                         <li><a href="#experiences">Experiences</a></li>
+                        <li><a href="#certificates">Certificates</a></li>
                         <li><a href="#contact">Contact</a></li>
                     </ul>
                 </div>
                 <div class="action-btn">
                     <button><a href="/assets/mutakin_resume.pdf" download="Mutakin Resume.pdf">Download CV</a></button>
                 </div>
-    
+
                 <div id="menu" class="menu-icon">
                     <div></div>
                     <div></div>
@@ -44,345 +48,297 @@
             <div id="nav-links-mobile" class="mobile-nav-links">
                 <ul>
                     <li><a href="#header">Profile</a></li>
-                    <li><a href="#services">Services</a></li>
                     <li><a href="#skills">Skills</a></li>
                     <li><a href="#portfolio">Portfolio</a></li>
                     <li><a href="#experiences">Experiences</a></li>
+                    <li><a href="#certificates">Certificates</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </div>
         </div>
     </nav>
     <div class="wrapper">
-
-        <div id="header" class="header">
-            <div class="header-left">
-                <p>Hello, I'm</p>
-                <h1>Mutakin</h1>
-                <div class="social-links">
-                    <ul>
-                        <li><a href="https://www.instagram.com/mutakinsinau/" target="_blank" rel="noopener noreferrer"><img src="images/icon/instagram.svg" alt="instagram"></a></li>
-                        <li><a href="https://www.tiktok.com/@kimdev.21" target="_blank" rel="noopener noreferrer"><img src="images/icon/tiktok.svg" alt="tiktok"></a></li>
-                        <li><a href="https://github.com/mutakin-san" target="_blank" rel="noopener noreferrer"><img src="images/icon/github.svg" alt="github"></a></li>
-                        <li><a href="https://linkedin.com/in/mutakin01" target="_blank" rel="noopener noreferrer"><img src="images/icon/linkedin.svg" alt="linkedin"></a></li>
-                    </ul>
+        <!-- Hero Section -->
+        <section id="header" class="hero-section">
+            <div class="hero-content">
+                <p class="greeting" data-aos="fade-down">Hello, I'm</p>
+                <h1 class="hero-name" data-aos="fade-right">Mutakin</h1>
+                <h2 class="hero-role" data-aos="fade-left">Mobile & Frontend Developer</h2>
+                <p class="hero-description" data-aos="fade-up">
+                    Crafting high-performance <b>iOS</b>, <b>Android</b>, and <b>Web</b> applications with a focus on
+                    premium UI/UX.
+                </p>
+                <div class="hero-actions" data-aos="fade-up" data-aos-delay="200">
+                    <a href="#contact" class="btn-primary">Hire Me</a>
+                    <a href="#portfolio" class="btn-secondary">View Work</a>
+                </div>
+                <div class="social-links" data-aos="fade-up" data-aos-delay="300">
+                    <a href="https://github.com/mutakin-san" target="_blank"><img src="images/icon/github.svg"
+                            alt="GitHub"></a>
+                    <a href="https://linkedin.com/in/mutakin01" target="_blank"><img src="images/icon/linkedin.svg"
+                            alt="LinkedIn"></a>
+                    <a href="https://www.instagram.com/mutakinsinau/" target="_blank"><img
+                            src="images/icon/instagram.svg" alt="Instagram"></a>
                 </div>
             </div>
-            <div class="header-middle" data-aos="zoom-in-up" data-aos-duration="1000">
-                <img src="images/mutakin.png" alt="mutakin">
+            <div class="hero-visual" data-aos="zoom-in" data-aos-duration="1000">
+                <div class="visual-circle"></div>
+                <img src="images/mutakin.png" alt="Mutakin Profile" class="profile-img">
             </div>
-            <div class="header-right">
-                <img src="images/decoration.svg" alt="Decoration">
-                <!-- <p>Available for Work</p> -->
-                <h1>Mobile & Frontend Developer</h1>
-                <p>A dedicated <b>Frontend & Mobile Developer</b> skilled in <b>iOS (Swift), Android (Kotlin), React.js, Vue.js, Next.js & Nuxt.js.</b>.
-                <br><br>Proven experience delivering <b>scalable web and mobile applications</b> with a strong focus on UI/UX, performance, and modern best practices.
-                <br><br>With a degree in Information Technology, I actively contribute to the tech community as a <b>mentor at Bangkit Academy</b> and possess a solid foundation in <b>web technologies, mobile development, backend integration, and database management</b>.
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section">
+            <div class="section-header" data-aos="fade-up">
+                <h2>About <span>Me</span></h2>
+                <p>My journey in the tech world</p>
             </div>
-        </div>
-
-        <div id="services">
-            <h2 class="section-title">
-                Most <span>Experienced</span><br>Services
-            </h2>
-
-            <div class="services">
-                <div class="service" data-aos="flip-up">
-                    <div class="service-icon">
-                        <img src="images/icon/android-dev.svg" alt="android">
-                    </div>
-                    <h3 class="service-title">Android Development</h3>
-                    <p class="service-description">Create functional and visually appealing mobile apps with seamless navigation.</p>
+            <div class="about-content">
+                <div class="about-text" data-aos="fade-right">
+                    <p>
+                        I am a passionate software engineer with a degree in Information Technology. My journey began
+                        with a curiosity for how things work, which evolved into a career in building scalable
+                        applications.
+                    </p>
+                    <p>
+                        I specialize in <b>Mobile Development</b> (iOS/Android) and <b>Frontend Web</b> technologies. I
+                        actively contribute to the community as a <b>Mentor at Bangkit Academy</b>, helping the next
+                        generation of developers.
+                    </p>
                 </div>
-                <div class="service" data-aos="flip-up">
-                    <div class="service-icon">
-                        <img src="images/icon/web-dev.svg" alt="web">
+                <div class="about-stats" data-aos="fade-left">
+                    <div class="stat-item">
+                        <h3>3+</h3>
+                        <p>Years Experience</p>
                     </div>
-                    <h3 class="service-title">Web Development</h3>
-                    <p class="service-description">Create responsive and interactive websites with seamless navigation.</p>
-                </div>
-            </div>
-        </div>
-
-        <div id="skills">
-            <h2 class="section-title">
-                Top <span>Professional</span><br>Skills
-            </h2>
-            <div class="skills">
-                <div class="skill" data-aos="fade-right" data-aos-delay="100">
-                    <div class="skill-icon">
-                        <img src="images/icon/kotlin.svg" alt="kotlin">
-                    </div>
-                    <p class="skill-title">Kotlin</p>
-                </div>
-                <div class="skill" data-aos="fade-right" data-aos-delay="200">
-                    <div class="skill-icon">
-                        <img src="images/icon/flutter.svg" alt="flutter">
-                    </div>
-                    <p class="skill-title">Flutter</p>
-                </div>
-                <div class="skill" data-aos="fade-right" data-aos-delay="300">
-                    <div class="skill-icon">
-                        <img src="images/icon/react.svg" alt="react">
-                    </div>
-                    <p class="skill-title">React</p>
-                </div>
-                <div class="skill" data-aos="fade-right" data-aos-delay="400">
-                    <div class="skill-icon">
-                        <img src="images/icon/vue.svg" alt="vue">
-                    </div>
-                    <p class="skill-title">Vue</p>
-                </div>
-                <div class="skill" data-aos="fade-right" data-aos-delay="500">
-                    <div class="skill-icon">
-                        <img src="images/icon/nodejs.svg" alt="nodejs">
-                    </div>
-                    <p class="skill-title">Node JS</p>
-                </div>
-                <div class="skill" data-aos="fade-right" data-aos-delay="600">
-                    <div class="skill-icon">
-                        <img src="images/icon/javascript.svg" alt="javascript">
-                    </div>
-                    <p class="skill-title">Javascript</p>
-                </div>
-                <div class="skill" data-aos="fade-right" data-aos-delay="700">
-                    <div class="skill-icon">
-                        <img src="images/icon/php.svg" alt="php">
-                    </div>
-                    <p class="skill-title">PHP</p>
-                </div>
-                <div class="skill" data-aos="fade-right" data-aos-delay="800">
-                    <div class="skill-icon">
-                        <img src="images/icon/laravel.svg" alt="laravel">
-                    </div>
-                    <p class="skill-title">Laravel</p>
-                </div>
-                <div class="skill" data-aos="fade-right" data-aos-delay="900">
-                    <div class="skill-icon">
-                        <img src="images/icon/figma.svg" alt="figma">
-                    </div>
-                    <p class="skill-title">Figma</p>
-                </div>
-                <div class="skill" data-aos="fade-right" data-aos-delay="1000">
-                    <div class="skill-icon">
-                        <img src="images/icon/git.svg" alt="Git">
-                    </div>
-                    <p class="skill-title">Git</p>
-                </div>
-            </div>
-        </div>
-
-
-        <div id="portfolio">
-            <h2 class="section-title">
-                Recent <span>Best Work</span><br>Portfolio
-            </h2>
-
-            <div class="bento-layout">
-                <div class="portfolio">
-                    <div class="project" data-aos="fade-up" data-aos-delay="100">
-                        <div class="project-image">
-                            <img src="images/pu-shy.jpg" alt="pu-shy">
-                        </div>
-                        <h3 class="project-title">Pu.Shy</h3>
-                        <p class="project-description">Pu.shy is a beginner-friendly iOS app designed to be your virtual lifting partner. It helps new lifters build safe habits by detecting body movements and posture using your phone’s camera, and giving instant feedback on whether your form is correct.</p>
-                    </div>
-
-                    <div class="project" data-aos="fade-up" data-aos-delay="100">
-                        <div class="project-image">
-                            <img src="images/asanti.png" alt="asanti">
-                        </div>
-                        <h3 class="project-title">Asanti</h3>
-                        <p class="project-description">An Android application that allows users to check the stunting status of babies and mom</p>
-                    </div>
-                    <div class="project" data-aos="fade-up" data-aos-delay="200">
-                        <div class="project-image">
-                            <a href="/"><img src="images/luarkelas_academy.png" alt="Luarkelas Academy"></a>
-                        </div>
-                        <h3 class="project-title">Luarkelas Academy</h3>
-                        <p class="project-description">Luarkelas Academy is Fullstack website using Next.js that provides a platform for users to buy online courses and events.</p>
-                    </div>
-                </div>
-                <div class="portfolio">
-                    <div class="project" data-aos="fade-up" data-aos-delay="300">
-                        <div class="project-image">
-                            <a href="https://github.com/mutakin-san/predikter" target="_blank"><img src="images/predikter.png" alt="predikter"></a>
-                        </div>
-                        <h3 class="project-title">Predikter</h3>
-                        <p class="project-description">Predikter is an Android application that allows users to predict the cattle body weight & selling price based on their body size.</p>
-                    </div>
-                    <div class="project" data-aos="fade-up" data-aos-delay="400">
-                        <div class="project-image">
-                            <a href="https://github.com/mutakin-san/ditonton" target="_blank"><img src="images/ditonton.png" alt="ditonton"></a>
-                        </div>
-                        <h3 class="project-title">Ditonton</h3>
-                        <p class="project-description">Ditonton is an Android application that allows users to watch movies and TV series.</p>
-                    </div>
-                    <div class="project" data-aos="fade-up" data-aos-delay="500">
-                        <div class="project-image">
-                            <a href="https://github.com/mutakin-san/cyphercity" target="_blank"><img src="images/cyphercity.png" alt="cyphercity"></a>
-                        </div>
-                        <h3 class="project-title">Cypher City SFC</h3>
-                        <p class="project-description">Cypher City SFC is an Android application for managing competitions.</p>
-                    </div>
-                    <div class="project" data-aos="fade-up" data-aos-delay="600">
-                        <div class="project-image">
-                            <a href="https://github.com/mutakin-san/valo.ai" target="_blank"><img src="images/valoai.png" alt="valoai"></a>
-                        </div>
-                        <h3 class="project-title">Valo.AI</h3>
-                        <p class="project-description">Valo.AI is an Android application to recommend vaccines location and types based on user</p>
-                    </div>
-                    <div class="project" data-aos="fade-up" data-aos-delay="700">
-                        <div class="project-image">
-                            <img src="images/maresto.png" alt="maresto">
-                        </div>
-                        <h3 class="project-title">Maresto</h3>
-                        <p class="project-description">Dicoding Submission application for Flutter Basic for Beginners</p>
-                    </div>
-                    
-                </div>
-            </div>
-        </div>
-
-
-        <div id="experiences">
-            <h2 class="section-title">
-                Work <span>Experience</span><br>
-                And <span>Education</span>
-            </h2>
-
-            <div class="experiences-wrapper">
-    
-                <div class="experiences">
-                    <div class="experience" data-aos="fade-up" data-aos-delay="100">
-                        <p class="experience-duration">February 2025 - Present</p>
-                        <h3 class="experience-title">Junior iOS Developer</h3>
-                        <p class="experience-company">Apple Developer Academy - Cohort 8</p>
-                    </div>
-                    <div class="experience" data-aos="fade-up" data-aos-delay="100">
-                        <p class="experience-duration">September 2024 - January 2024</p>
-                        <h3 class="experience-title">Mentor - Android Development Path</h3>
-                        <p class="experience-company">Bangkit Academy by Google, GoTo, Traveloka</p>
-                    </div>
-                    <div class="experience" data-aos="fade-up" data-aos-delay="200">
-                        <p class="experience-duration">July 2024 - December 2024</p>
-                        <h3 class="experience-title">Front-End Developer Intern</h3>
-                        <p class="experience-company">Qiscus</p>
-                    </div>
-                    <div class="experience" data-aos="fade-up" data-aos-delay="300">
-                        <p class="experience-duration">June 2024 - September 2024</p>
-                        <h3 class="experience-title">Front-End Developer Intern</h3>
-                        <p class="experience-company">Luarkelas</p>
-                    </div>
-                    <div class="experience" data-aos="fade-up" data-aos-delay="400">
-                        <p class="experience-duration">February 2024 - July 2024</p>
-                        <h3 class="experience-title">Mentor - Android Development Path</h3>
-                        <p class="experience-company">Bangkit Academy by Google, GoTo, Traveloka</p>
-                    </div>
-                    <div class="experience" data-aos="fade-up" data-aos-delay="500">
-                        <p class="experience-duration">August 2023 - January 2024</p>
-                        <h3 class="experience-title">Mentor - Android Development Path</h3>
-                        <p class="experience-company">Bangkit Academy by Google, GoTo, Traveloka</p>
-                    </div>
-                    <div class="experience" data-aos="fade-up" data-aos-delay="600">
-                        <p class="experience-duration">November 2022 - July 2023</p>
-                        <h3 class="experience-title">Android Developer</h3>
-                        <p class="experience-company">PT Securetasks Global Teknologi</p>
-                    </div>
-                    <div class="experience" data-aos="fade-up" data-aos-delay="700">
-                        <p class="experience-duration">August 2020 - January 2021</p>
-                        <h3 class="experience-title">Web Developer</h3>
-                        <p class="experience-company">Neosantara</p>
-                    </div>
-                </div>
-
-                <div class="educations">
-                    <div class="education" data-aos="fade-up" data-aos-delay="100">
-                        <p class="education-duration">*June 2023 - May 2024</p>
-                        <h3 class="education-title">S1 - Informatics Engineering</h3>
-                        <p class="education-company">Perjuangan University</p>
-                    </div>
-                    <div class="education" data-aos="fade-up" data-aos-delay="200">
-                        <p class="education-duration">September 2019 - March 2023*</p>
-                        <h3 class="education-title">S1 - Informatics Engineering</h3>
-                        <p class="education-company">STMIK Tasikmalaya</p>
-                    </div>
-                    <div class="education" data-aos="fade-up" data-aos-delay="300">
-                        <p class="education-duration">July 2016 - May 2019</p></p>
-                        <h3 class="education-title">Software Engineering</h3>
-                        <p class="education-company">SMKN Bantarkalong</p>
+                    <div class="stat-item">
+                        <h3>10+</h3>
+                        <p>Projects Completed</p>
                     </div>
                 </div>
             </div>
+        </section>
 
-
-            <button class="action-btn-filled"><a href="/assets/mutakin_cv.pdf" download="Mutakin CV.pdf">Download CV</a></button>
-
-        </div>
-
-
-        <div id="contact">
-            <div class="contact-wrapper">
-                <div class="contact-info">
-                    <h2 class="section-title">Let's Work Together <br>On Your Next <br> <span>Project</span></h2>
-                    <div class="contact-info-item">
-                        <img src="images/icon/phone.png" class="contact-info-icon" alt="Contact Information">
-                        <div class="contact-info-item__wrapper">
-                            <h3 class="contact-info-title">Contact</h3>
-                            <p class="contact-info-subtitle">+62 857 9473 9280</p>
-                        </div>
-                    </div>
-                    <div class="contact-info-item">
-                        <img src="images/icon/email.png" class="contact-info-icon" alt="Contact Information">
-                        <div class="contact-info-item__wrapper">
-                            <h3 class="contact-info-title">Email</h3>
-                            <p class="contact-info-subtitle">mutakindv@gmail.com</p>
-                        </div>
-                    </div>
-                    <div class="contact-info-item">
-                        <img src="images/icon/address.png" class="contact-info-icon" alt="Contact Information">
-                        <div class="contact-info-item__wrapper">
-                            <h3 class="contact-info-title">Address</h3>
-                            <p class="contact-info-subtitle">Tasikmalaya, Indonesia</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="contact-form">
-                    <form action="">
-                        <div class="divide-two">
-                            <div class="form-control">
-                                <input type="text" name="name" id="name" placeholder="Your Name">
-                            </div>
-                            <div class="form-control">
-                                <input type="email" name="email" id="email" placeholder="Your Email">
-                            </div>
-                            
-                        </div>
-                        <div class="form-control">
-                            <input type="text" name="subject" id="subject" placeholder="Subject">
-                        </div>
-                        <div class="form-control">
-                            <textarea name="message" id="message" cols="30" rows="10" placeholder="Message"></textarea>
-                        </div>
-                        <button id="btn-send-email" class="action-btn-filled">Send</button>
-                    </form>
-                </div>
-               
+        <!-- Skills Section -->
+        <section id="skills" class="skills-section">
+            <div class="section-header" data-aos="fade-up">
+                <h2>My <span>Skills</span></h2>
+                <p>Technologies I work with</p>
             </div>
-        </div>
+            <div class="skills-grid">
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="100">
+                    <h3>Mobile</h3>
+                    <div class="skill-list">
+                        <div class="skill-item"><img src="images/icon/kotlin.svg" alt="Kotlin"> <span>Kotlin</span>
+                        </div>
+                        <div class="skill-item"><img src="images/icon/flutter.svg" alt="Flutter"> <span>Flutter</span>
+                        </div>
+                        <!-- Add Swift icon if available or text -->
+                        <div class="skill-item"><img src="images/icon/swift.png" alt="Swift"> <span>Swift (iOS)</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="200">
+                    <h3>Frontend</h3>
+                    <div class="skill-list">
+                        <div class="skill-item"><img src="images/icon/react.svg" alt="React"> <span>React</span></div>
+                        <div class="skill-item"><img src="images/icon/vue.svg" alt="Vue"> <span>Vue</span></div>
+                        <div class="skill-item"><img src="images/icon/javascript.svg" alt="JS"> <span>JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="300">
+                    <h3>Backend & Tools</h3>
+                    <div class="skill-list">
+                        <div class="skill-item"><img src="images/icon/nodejs.svg" alt="Node"> <span>Node.js</span></div>
+                        <div class="skill-item"><img src="images/icon/laravel.svg" alt="Laravel"> <span>Laravel</span>
+                        </div>
+                        <div class="skill-item"><img src="images/icon/git.svg" alt="Git"> <span>Git</span></div>
+                        <div class="skill-item"><img src="images/icon/figma.svg" alt="Figma"> <span>Figma</span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
+        <!-- Portfolio Section -->
+        <section id="portfolio" class="portfolio-section">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Featured <span>Projects</span></h2>
+                <p>Some of my best work</p>
+            </div>
+            <div class="filter-buttons" data-aos="fade-up" data-aos-delay="100">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="iOS">iOS</button>
+                <button class="filter-btn" data-filter="Android">Android</button>
+                <button class="filter-btn" data-filter="Web">Web</button>
+                <button class="filter-btn" data-filter="Flutter">Flutter</button>
+            </div>
+            <div id="projects-container" class="projects-grid">
+                <!-- Injected by JS -->
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experiences" class="experience-section">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Experience & <span>Education</span></h2>
+            </div>
+            <div class="timeline">
+                <!-- Experience & Education Items -->
+                <div class="timeline-item" data-aos="fade-left">
+                    <div class="timeline-content">
+                        <span class="timeline-date">Feb 2025 - Present</span>
+                        <h3>Junior iOS Developer</h3>
+                        <h4>Apple Developer Academy - Cohort 8</h4>
+                        <p>Focusing on iOS development, design thinking, and professional skills.</p>
+                    </div>
+                </div>
+                <div class="timeline-item" data-aos="fade-right">
+                    <div class="timeline-content">
+                        <span class="timeline-date">Sep 2024 - Jan 2025</span>
+                        <h3>Mentor - Android Development Path</h3>
+                        <h4>Bangkit Academy by Google, GoTo, Traveloka</h4>
+                        <p>Guided students in Android development, code reviews, and career preparation.</p>
+                    </div>
+                </div>
+                <div class="timeline-item" data-aos="fade-left">
+                    <div class="timeline-content">
+                        <span class="timeline-date">July 2024 - Dec 2024</span>
+                        <h3>Front-End Developer Intern</h3>
+                        <h4>Qiscus</h4>
+                        <p>Developed and maintained frontend features for enterprise communication solutions.</p>
+                    </div>
+                </div>
+                <div class="timeline-item" data-aos="fade-right">
+                    <div class="timeline-content">
+                        <span class="timeline-date">June 2024 - Sep 2024</span>
+                        <h3>Front-End Developer Intern</h3>
+                        <h4>Luarkelas</h4>
+                        <p>Built responsive web applications and contributed to the company's ed-tech platform.</p>
+                    </div>
+                </div>
+                <div class="timeline-item" data-aos="fade-left">
+                    <div class="timeline-content">
+                        <span class="timeline-date">*June 2023 - May 2024</span>
+                        <h3>S1 - Informatics Engineering</h3>
+                        <h4>Perjuangan University</h4>
+                        <p>Completed bachelor's degree in Informatics Engineering.</p>
+                    </div>
+                </div>
+                <div class="timeline-item" data-aos="fade-right">
+                    <div class="timeline-content">
+                        <span class="timeline-date">Feb 2024 - July 2024</span>
+                        <h3>Mentor - Android Development Path</h3>
+                        <h4>Bangkit Academy by Google, GoTo, Traveloka</h4>
+                        <p>Mentored students in mobile development and software engineering practices.</p>
+                    </div>
+                </div>
+                <div class="timeline-item" data-aos="fade-left">
+                    <div class="timeline-content">
+                        <span class="timeline-date">Aug 2023 - Jan 2024</span>
+                        <h3>Mentor - Android Development Path</h3>
+                        <h4>Bangkit Academy by Google, GoTo, Traveloka</h4>
+                        <p>Provided guidance and support to aspiring Android developers.</p>
+                    </div>
+                </div>
+                <div class="timeline-item" data-aos="fade-right">
+                    <div class="timeline-content">
+                        <span class="timeline-date">Sep 2019 - Mar 2023*</span>
+                        <h3>S1 - Informatics Engineering</h3>
+                        <h4>STMIK Tasikmalaya</h4>
+                        <p>Studied computer science and software engineering fundamentals.</p>
+                    </div>
+                </div>
+                <div class="timeline-item" data-aos="fade-left">
+                    <div class="timeline-content">
+                        <span class="timeline-date">Nov 2022 - July 2023</span>
+                        <h3>Android Developer</h3>
+                        <h4>PT Securetasks Global Teknologi</h4>
+                        <p>Developed native Android applications for enterprise clients.</p>
+                    </div>
+                </div>
+                <div class="timeline-item" data-aos="fade-right">
+                    <div class="timeline-content">
+                        <span class="timeline-date">Aug 2020 - Jan 2021</span>
+                        <h3>Web Developer</h3>
+                        <h4>Neosantara</h4>
+                        <p>Built and maintained web applications using modern frameworks.</p>
+                    </div>
+                </div>
+                <div class="timeline-item" data-aos="fade-left">
+                    <div class="timeline-content">
+                        <span class="timeline-date">July 2016 - May 2019</span>
+                        <h3>Software Engineering</h3>
+                        <h4>SMKN Bantarkalong</h4>
+                        <p>Vocational high school specializing in software development.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certificates Section -->
+        <section id="certificates" class="certificates-section">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Certificates & <span>Achievements</span></h2>
+                <p>Professional certifications and recognitions</p>
+            </div>
+            <div id="certificates-container" class="certificates-grid">
+                <!-- Injected by JS -->
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Get In <span>Touch</span></h2>
+                <p>Let's build something amazing together</p>
+            </div>
+            <div class="contact-container">
+                <div class="contact-info" data-aos="fade-right">
+                    <div class="info-item">
+                        <h3>Email</h3>
+                        <p>mutakindv@gmail.com</p>
+                    </div>
+                    <div class="info-item">
+                        <h3>Phone</h3>
+                        <p>+62 857 9473 9280</p>
+                    </div>
+                    <div class="info-item">
+                        <h3>Location</h3>
+                        <p>Tasikmalaya, Indonesia</p>
+                    </div>
+                </div>
+                <form class="contact-form" data-aos="fade-left">
+                    <div class="form-group">
+                        <input type="text" id="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="subject" placeholder="Subject" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="button" id="btn-send-email" class="btn-primary">Send Message</button>
+                </form>
+            </div>
+        </section>
 
         <footer>
-            <div class="logo">
-                <h1>Mutakin.</h1>
+            <div class="footer-content">
+                <p>&copy;
+                    <script>document.write(new Date().getFullYear())</script> Mutakin. All Rights Reserved.
+                </p>
             </div>
-
-            <p>© <script>document.write(new Date().getFullYear())</script> Mutakin. All Rights Reserved</p>
         </footer>
     </div>
-    
+
+    <script src="js/projects.js"></script>
+    <script src="js/certificates.js"></script>
     <script src="index.js"></script>
-    
+
     <script>
         AOS.init();
 
@@ -402,4 +358,5 @@
 
     </script>
 </body>
+
 </html>

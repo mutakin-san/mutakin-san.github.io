@@ -1,8 +1,24 @@
-$light-blue: #3DC5FF;
-$orange: #F4AC3F;
-$light-green: #00E116;
-$grey: #CCCCCC;
-$dark-grey: #848484;
-$secondary-black: #1E1E1E;
-$dark: #111111;
-$white: #FFFFFF;
+// Premium Dark Theme Palette
+$dark-bg: #0a0a0a;
+$card-bg: rgba(255, 255, 255, 0.05);
+$card-border: rgba(255, 255, 255, 0.1);
+
+$primary-color: #00f2ff; // Cyan Neon
+$secondary-color: #7000ff; // Deep Violet
+$accent-color: #ff0055; // Hot Pink
+
+$text-main: #ffffff;
+$text-muted: #a3a3a3;
+
+$gradient-main: linear-gradient(135deg, $secondary-color 0%, $primary-color 100%);
+$glass-effect: blur(10px);
+
+// Legacy compatibility (mapping new to old if needed, or just replacing usage)
+$light-blue: $primary-color;
+$orange: $accent-color;
+$light-green: #00ff9d;
+$grey: $text-muted;
+$dark-grey: #333333;
+$secondary-black: #121212;
+$dark: $dark-bg;
+$white: $text-main;

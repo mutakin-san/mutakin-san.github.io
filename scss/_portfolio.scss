@@ -1,64 +1,162 @@
 @use 'variables' as var;
 
-#portfolio {
-    padding: 4rem 0;
+.portfolio-section {
+    padding: 6rem 0;
+
+    .section-header {
+        text-align: center;
+        margin-bottom: 4rem;
+
+        h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+
+            span {
+                background: var.$gradient-main;
+                -webkit-background-clip: text;
+                background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+        }
+
+        p {
+            color: var.$text-muted;
+            font-size: 1.1rem;
+        }
+    }
+
+    .filter-buttons {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        margin-bottom: 3rem;
+        flex-wrap: wrap;
+
+        .filter-btn {
+            padding: 0.7rem 1.5rem;
+            background: var.$card-bg;
+            border: 1px solid var.$card-border;
+            border-radius: 50px;
+            color: var.$text-muted;
+            font-weight: 500;
+            font-size: 0.95rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+
+            &:hover {
+                border-color: var.$primary-color;
+                color: var.$primary-color;
+                background: rgba(0, 242, 255, 0.05);
+            }
+
+            &.active {
+                background: var.$gradient-main;
+                color: var.$dark-bg;
+                border-color: transparent;
+                font-weight: 600;
+            }
+        }
+    }
 }
 
-.bento-layout {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-    margin-top: 4rem;
-}
-
-.portfolio {
+.projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-    gap: 1rem;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 2rem;
 
     .project {
         display: flex;
         flex-direction: column;
-        align-items: center;
         gap: 1rem;
-        background-color: var.$secondary-black;
-        border-radius: .5rem;
-        padding: 1rem;
-        transition: transform .3s ease-in-out;
+        background: var.$card-bg;
+        backdrop-filter: var.$glass-effect;
+        border: 1px solid var.$card-border;
+        border-radius: 16px;
+        padding: 1.5rem;
+        transition: all 0.3s ease;
         cursor: pointer;
 
         &:hover {
-            transform: scale(1.05);
+            transform: translateY(-8px);
+            border-color: var.$primary-color;
+            box-shadow: 0 10px 30px rgba(0, 242, 255, 0.1);
         }
 
         .project-image img {
             width: 100%;
             object-fit: cover;
-            aspect-ratio: 9/6;
-            border-radius: .5rem;
+            aspect-ratio: 16/10;
+            border-radius: 12px;
         }
 
-        .project-title, .project-description {
-            font-family: 'Inter', serif;
-            color: var.$white;
+        .project-content {
+            display: flex;
+            flex-direction: column;
+            gap: 0.8rem;
         }
 
         .project-title {
-            font-weight: 700;
             font-size: 1.5rem;
+            font-weight: 700;
+            color: var.$white;
+
+            a {
+                text-decoration: none;
+                color: inherit;
+                transition: color 0.3s;
+
+                &:hover {
+                    color: var.$primary-color;
+                }
+            }
         }
 
         .project-description {
-            font-weight: 400;
-            font-size: 1rem;
-            line-height: 1.5rem;
+            font-size: 0.95rem;
+            line-height: 1.6;
+            color: var.$text-muted;
+        }
+
+        .project-meta {
+            display: flex;
+            gap: 0.5rem;
+            align-items: center;
+            font-size: 0.85rem;
+            color: var.$primary-color;
+            font-weight: 500;
+
+            .separator {
+                color: var.$text-muted;
+            }
+        }
+
+        .project-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-top: 0.5rem;
+        }
+
+        .project-tag {
+            background: rgba(0, 242, 255, 0.1);
+            color: var.$primary-color;
+            padding: 0.4rem 0.9rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 500;
+            border: 1px solid rgba(0, 242, 255, 0.2);
+            transition: all 0.2s ease;
+        }
+
+        &:hover .project-tag {
+            background: rgba(0, 242, 255, 0.2);
+            border-color: var.$primary-color;
         }
     }
 }
 
-.portfolio:first-child {
-    grid-template-columns: repeat(3, 1fr);
+@media screen and (max-width: 768px) {
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
 }
-

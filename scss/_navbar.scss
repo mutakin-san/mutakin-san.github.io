@@ -1,25 +1,33 @@
 @use 'variables' as var;
+
 nav {
-    position: sticky;
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
-    z-index: 10;
+    z-index: 1000;
+    background: rgba(10, 10, 10, 0.8);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-bottom: 1px solid var.$card-border;
+    transition: all 0.3s ease;
 }
 
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1.2rem 0;
-    background-color: var.$dark;
+    padding: 1rem 0;
 
     .logo {
         h1 {
-            font-family: 'Inter', serif;
-            font-size: 2rem;
+            font-family: 'Kalam', cursive;
+            font-size: 1.8rem;
             font-weight: 700;
             color: var.$white;
+            background: var.$gradient-main;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
         }
     }
 
@@ -27,18 +35,36 @@ nav {
         ul {
             display: flex;
             list-style: none;
+            gap: 2rem;
+
             li {
                 a {
                     text-decoration: none;
-                    color: var.$white;
-                    font-family: 'Inter', serif;
-                    font-weight: 700;
-                    font-size: 1rem;
-                    margin: 0 1rem;
+                    color: var.$text-muted;
+                    font-family: 'Inter', sans-serif;
+                    font-weight: 500;
+                    font-size: 0.95rem;
+                    transition: color 0.3s ease;
+                    position: relative;
 
-                    &:hover, &:focus, &:active{
-                        color: var.$light-blue;
-                        transition: all 0.3s ease-in-out;
+                    &:hover,
+                    &.active {
+                        color: var.$primary-color;
+                    }
+
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        width: 0;
+                        height: 2px;
+                        bottom: -4px;
+                        left: 0;
+                        background-color: var.$primary-color;
+                        transition: width 0.3s ease;
+                    }
+
+                    &:hover::after {
+                        width: 100%;
                     }
                 }
             }
@@ -47,37 +73,53 @@ nav {
 
     .action-btn {
         button {
-            background-color: transparent;
-            color: var.$light-blue;;
-            border: 1px solid var.$light-blue;
-            padding: 0.5rem 1rem;
-            border-radius: 0.5rem;
-            font-family: 'Inter', serif;
-            font-weight: 400;
-            font-size: 1rem;
+            // Inherits from .btn-secondary or similar via HTML class if updated, 
+            // but here we style the specific button inside navbar if it's just a button tag
+            background: transparent;
+            color: var.$primary-color;
+            border: 1px solid var.$primary-color;
+            padding: 0.5rem 1.2rem;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+
+            a {
+                text-decoration: none;
+                color: inherit;
+            }
+
+            &:hover {
+                background: var.$primary-color;
+                color: var.$dark-bg;
+                box-shadow: 0 0 15px rgba(0, 242, 255, 0.3);
+            }
         }
     }
 
     .menu-icon {
         display: none;
         cursor: pointer;
+
         div {
             width: 25px;
-            height: 3px;
-            background-color: var.$light-blue;
-            margin: 5px 0;
+            height: 2px;
+            background-color: var.$white;
+            margin: 6px 0;
             border-radius: 5px;
+            transition: all 0.3s ease;
         }
 
         &.active {
             div:nth-child(1) {
-                transform: rotate(45deg) translate(12.5px, 1px);
+                transform: rotate(45deg) translate(5px, 6px);
             }
+
             div:nth-child(2) {
                 opacity: 0;
             }
+
             div:nth-child(3) {
-                transform: rotate(-45deg) translate(10.5px, 1px);
+                transform: rotate(-45deg) translate(5px, -6px);
             }
         }
     }
@@ -85,77 +127,56 @@ nav {
 
 
 .mobile-nav-links {
-    visibility: hidden;
-    opacity: 0;
-    transition: all 0.5s ease-in-out;
+    position: fixed;
+    top: 70px; // Height of navbar
+    left: 0;
+    right: 0;
+    background: var.$dark-bg;
+    border-bottom: 1px solid var.$card-border;
+    padding: 0;
+    max-height: 0;
     overflow: hidden;
-    height: 0;
-    
+    transition: max-height 0.4s ease-in-out;
+
     ul {
         display: flex;
         flex-direction: column;
+        padding: 1rem 2rem;
 
         li {
+            margin-bottom: 1rem;
 
-            padding: 1rem;
-            background-color: var.$secondary-black;
             a {
                 text-decoration: none;
                 color: var.$white;
-                font-family: 'Inter', serif;
-                font-weight: 700;
-                font-size: 1rem;
-            }
+                font-size: 1.1rem;
+                display: block;
+                padding: 0.5rem 0;
 
-            &:hover, &:focus, &:active{
-                background-color: var.$light-blue;
-                transition: all 0.3s ease-in-out;
+                &:hover {
+                    color: var.$primary-color;
+                }
             }
         }
     }
 
     &.active {
-        visibility: visible;
-        opacity: 1;
-        height: initial;
+        max-height: 400px;
     }
 
-
-    @media screen and (min-width: 768px) {
-        &.active {
-            visibility: hidden;
-            opacity: 0;
-            height: 0;
-        }
-    }
-
-}
-
-@media screen and (max-width: 1024px) {
-    .navbar {
-        .logo {
-            h1 {
-                font-size: 1.5rem;
-            }
-        }
+    @media screen and (min-width: 769px) {
+        display: none;
     }
 }
-
 
 @media screen and (max-width: 768px) {
-    .navbar {
-        .logo {
-            h1 {
-                font-size: 1.2rem;
-            }
-        }
-    }
-        
-    .nav-links, .action-btn {
+
+    .nav-links,
+    .action-btn {
         display: none;
     }
 
     .menu-icon {
-        display: block!important;
+        display: block;
     }
 }

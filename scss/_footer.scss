@@ -1,19 +1,16 @@
 @use 'variables' as var;
 
 footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 2rem 0;
-    background-color: var.$dark;
-    color: var.$white;
-    font-family: 'Inter', serif;
+    padding: 3rem 0;
+    border-top: 1px solid var.$card-border;
+    margin-top: 4rem;
 
-    .logo {
-        font-size: 1.5rem;
+    .footer-content {
+        text-align: center;
 
-        @media screen and (max-width: 768px) {
-            font-size: 1.2rem;
+        p {
+            color: var.$text-muted;
+            font-size: 0.95rem;
         }
     }
 }
