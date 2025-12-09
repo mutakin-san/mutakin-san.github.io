@@ -7,6 +7,15 @@ menu.addEventListener('click', () => {
     navLinks?.classList.toggle('active');
 })
 
+// Close mobile menu when a link is clicked
+const mobileLinks = document.querySelectorAll('#nav-links-mobile a');
+mobileLinks.forEach(link => {
+    link.addEventListener('click', () => {
+        menu.classList.remove('active');
+        navLinks?.classList.remove('active');
+    });
+});
+
 const projectsContainer = document.getElementById('projects-container');
 
 if (projectsContainer && typeof projects !== 'undefined') {
@@ -19,12 +28,20 @@ if (projectsContainer && typeof projects !== 'undefined') {
         projectElement.setAttribute('data-aos', 'fade-up');
         projectElement.setAttribute('data-aos-delay', project.aosDelay);
 
+        // Make the entire card clickable
+        projectElement.style.cursor = 'pointer';
+        projectElement.addEventListener('click', (e) => {
+            // Prevent navigation if the user clicked on a tag or other interactive element if any
+            // For now, just navigate
+            window.location.href = `project-detail.html?id=${project.id}`;
+        });
+
         // Add data attributes for filtering
         projectElement.setAttribute('data-technologies', JSON.stringify(project.technologies));
 
         let imageContent;
-        // Link to internal detail page instead of external link directly
-        imageContent = `<a href="project-detail.html?id=${project.id}"><img src="${project.image}" alt="${project.title}"></a>`;
+        // Image only, no anchor needed as parent is clickable
+        imageContent = `<img src="${project.image}" alt="${project.title}">`;
 
         const tagsHtml = project.tags ?
             `<div class="project-tags">
