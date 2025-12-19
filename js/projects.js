@@ -1,5 +1,31 @@
 const projects = [
     {
+        id: "spacenauts",
+        title: "Spacenauts",
+        description: "Spacenauts is a ipad game that challenges players to docking spaceship to space station with limited fuel and real physics movement.",
+        longDescription: "",
+        challenge: "Developing a mobile game about space",
+        solution: "Developed an iOS game using Swift and RealityKit to create an engaging space docking experience with realistic physics.",
+        impact: "Spacenauts has received positive feedback from exhibition visitor and usability test users.",
+        features: [
+            "Docking spaceship to space station with limited fuel",
+            "Real physics movement",
+            "3D environment",
+        ],
+        technologies: ["iOS", "Swift", "SwiftUI", "RealityKit", "SwiftData", "Blender"],
+        image: "images/spacenauts.jpg",
+        gallery: [],
+        link: null,
+        repo: null,
+        team: "Team of 6",
+        duration: "3 Months",
+        type: "Mobile Game",
+        aosDelay: 100,
+        tags: ["iOS", "Swift", "RealityKit", "SwiftData", "Blender"],
+        role: "iOS Developer",
+        year: "2025"
+    },
+    {
         id: "pu-shy",
         title: "Pu.Shy",
         description: "Pu.shy is a beginner-friendly iOS app designed to be your virtual lifting partner. It helps new lifters build safe habits by detecting body movements and posture using your phone’s camera.",
