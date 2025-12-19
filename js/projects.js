@@ -4,7 +4,7 @@ const projects = [
         title: "Spacenauts",
         description: "Spacenauts is a ipad game that challenges players to docking spaceship to space station with limited fuel and real physics movement.",
         longDescription: "Spacenauts is an immersive iOS game developed for the iPad that places players in the role of a spaceship pilot tasked with docking to a space station. The game emphasizes realistic physics, requiring players to carefully manage their limited fuel supply while navigating the challenges of space travel. Players must account for momentum, inertia, and gravitational forces as they attempt to align their spacecraft with the docking port.\n\n The game features multiple levels of increasing difficulty, each introducing new obstacles and tighter fuel constraints. The intuitive touch controls allow players to adjust their thrust and orientation, providing an engaging and educational experience about the principles of spaceflight. Spacenauts combines entertainment with learning, making it suitable for players of all ages interested in space exploration.",
-        challenge: "Developing a mobile game about space",
+        challenge: "Develop a final project for Apple Developer Academy that showcases skills in development, design thinking, and professional skills.",
         solution: "Developed an iOS game using Swift and RealityKit to create an engaging space docking experience with realistic physics.",
         impact: "Spacenauts has received positive feedback from exhibition visitor and usability test users.",
         features: [
