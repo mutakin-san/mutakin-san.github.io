@@ -51,7 +51,7 @@ const projects = [
             "Privacy-focused: All processing happens on-device"
         ],
         technologies: ["iOS", "Swift", "SwiftUI", "MLKit", "Vision", "CoreML", "CreateML"],
-        image: "images/pu.shy.jpg",
+        image: "images/pushy/pu.shy.jpg",
         gallery: [],
         link: null,
         repo: null,
@@ -135,7 +135,7 @@ const projects = [
             "Real-time Event Registration"
         ],
         technologies: ["Next.js", "React", "TypeScript", "Tailwind CSS", "PostgreSQL", "Prisma", "Web"],
-        image: "images/luarkelas_academy.png",
+        image: "images/luarkelas/luarkelas_academy.png",
         gallery: [],
         link: null,
         repo: null,
@@ -163,7 +163,7 @@ const projects = [
             "Simple Data Entry Interface"
         ],
         technologies: ["Flutter", "Dart", "Augmented Reality", "Clean Architecture", "MVVM"],
-        image: "images/predikter.png",
+        image: "images/predikter/predikter.png",
         gallery: [],
         link: "https://play.google.com/store/apps/details?id=com.kimdev.predikter",
         repo: "https://github.com/mutakin-san/predikter",
@@ -191,7 +191,7 @@ const projects = [
             "Unit & UI Testing Coverage"
         ],
         technologies: ["Android", "Flutter", "Dart", "CI/CD", "BLoC State Management", "Get It"],
-        image: "images/ditonton.png",
+        image: "images/ditonton/ditonton.png",
         gallery: [],
         link: "https://github.com/mutakin-san/ditonton",
         repo: "https://github.com/mutakin-san/ditonton",
@@ -219,7 +219,7 @@ const projects = [
             "MVVM Architecture Pattern"
         ],
         technologies: ["Android", "Flutter", "Dart"],
-        image: "images/cyphercity.png",
+        image: "images/cyphercity/cyphercity.png",
         gallery: [],
         link: "https://github.com/mutakin-san/cyphercity",
         repo: "https://github.com/mutakin-san/cyphercity",
@@ -247,7 +247,7 @@ const projects = [
             "Appointment Scheduling Support"
         ],
         technologies: ["Android", "Kotlin", "Google Maps API", "Location Services", "Room Database"],
-        image: "images/valoai.png",
+        image: "images/valoai/valoai.png",
         gallery: [],
         link: "https://github.com/mutakin-san/valo.ai",
         repo: "https://github.com/mutakin-san/valo.ai",
