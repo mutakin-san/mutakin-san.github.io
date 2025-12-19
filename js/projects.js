@@ -52,7 +52,7 @@ const projects = [
         ],
         technologies: ["iOS", "Swift", "SwiftUI", "MLKit", "Vision", "CoreML", "CreateML"],
         image: "images/pushy/pu.shy.jpg",
-        gallery: [],
+        gallery: ["images/pushy/banner.png",],
         link: null,
         repo: null,
         team: "Team of 6",
